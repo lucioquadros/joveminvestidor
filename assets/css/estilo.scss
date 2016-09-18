@@ -1,0 +1,197 @@
+@import "normalize";
+@import "fonts";
+@import "cores";
+
+$font-homizio-thin: 'homizio-thin';
+$font-homizio-light: 'homizio-light';
+$font-homizio-regular: 'homizio-regular';
+$font-homizio-medium: 'homizio-medium';
+$font-homizio-black: 'homizio-black';
+$font-homizio-bold: 'homizio-bold';
+$font-souses: 'souses';
+
+body {
+    width: 100%;
+    font-family: $font-homizio-regular;
+    color: $cor-preto-6;
+
+    p {
+    	margin: 15px 0;
+    }
+}
+
+header {
+
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    background-color: $cor-azul;
+    
+    nav {
+		width: 900px; /******** temporario ******/
+    	margin: 38px auto 0;
+    	text-align: center;
+
+    	a {
+    		font-family: $font-homizio-bold;
+    		font-size: 24px;
+    		color: $cor-branco;
+    		text-decoration: none;
+
+    		&:nth-child(n+2) {
+    			margin-left: 90px;
+    		}
+    	}
+
+    	a:link {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+    }
+}
+
+section {
+	width: 900px; /******** temporario ******/
+	max-width: 900px;
+	margin: 140px auto 0;
+
+	article {
+		text-align: center;
+
+		h1 {
+			font-family: $font-souses;
+			font-size: 48px;
+			color: $cor-azul;
+			letter-spacing: 2px;
+		}
+	}
+
+	form {
+		width: 900px;
+		height: 426px;
+		padding-top: 25px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		background-color: $cor-azul;
+
+		input {
+			width: 800px;
+			color: $cor-branco;
+			font-size: 36px;
+		}
+
+		input[type='text'], input[type='email'], input[type='number'], #sexo {
+			height: 54px;
+			margin-bottom: 25px;
+			border: 0;
+			border-bottom: 2px solid $cor-branco;
+			background-color: $cor-azul;
+		}
+
+		input[type='submit'] {
+			height: 100px;
+			margin-top: 15px;
+			background-color: $cor-azul-escuro;
+			border-color: $cor-azul-medio;
+			border-radius: 5px;
+			font-family: $font-homizio-regular;
+			cursor: pointer;
+		}
+
+		#sexo, .idade {
+			width: 360px;
+		}
+
+		#sexo {
+			height: 58px;
+			margin-left: 78px;
+			color: $cor-branco;
+			font-size: 36px;
+		}
+	}
+
+	article:first-child {
+
+		.logo {
+			margin: 0 auto;
+			max-width: 400px;
+			img {
+				width: 100%;
+			}
+		}
+
+		p {
+			font-size: 24px;
+		}
+	}
+
+	.calculadora-financeira {
+
+		p {
+			font-size: 30px;
+		}
+
+	}
+
+	.guia-financas {
+
+		p {
+			font-size: 30px;
+		}
+
+		.p-tempo {
+			margin-top: 30px;
+			font-size: 24px;
+		}
+
+		.tempo {
+
+			color: $cor-azul;
+
+			& > div {
+				display: inline-block;
+
+				&:nth-child(n+2) {
+					margin-left: 110px;
+				}
+
+				span {
+					margin-top: 15px;
+					display: block;
+				}
+			}
+
+			
+			.tempo-numero {
+				font-family: $font-homizio-bold;
+				font-size: 120px;
+			}
+
+			.tempo-texto {
+				font-family: $font-homizio-regular;
+				font-size: 48px;
+			}
+
+		}
+	}
+
+	.blog-financas {
+
+		p {
+			font-size: 18px;
+		}
+
+		.texto-destaque {
+			font-family: $font-souses;
+			font-size: 30px;
+		}
+
+		img {
+			max-width: 800px;
+		}
+	}
+}

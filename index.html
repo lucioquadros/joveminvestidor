@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/estilo.css" type="text/css" />
+    <script type="text/javascript" src="assets/js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/counter.js"></script>
+    <script type="text/javascript" data-init="Index" data-method="init" src="assets/js/script.js"></script>
+    <script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	 ga('create', 'UA-84302277-1', 'auto');
+	 ga('send', 'pageview');
+	</script>
+    <title>Jovem Investidor</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="#">Ver meu perfil financeiro</a>
+        <a href="#">Receber o livro</a>
+        <a href="#">Ler o Blog Fodástico</a>
+      </nav>
+    </header>
+
+    <section>
+
+      <article>
+        <h1 class="logo">
+          <img src="assets/imagens/logo.png">
+        </h1>
+        <p>Ter pouco dinheiro é foda. Saber usar pouco dinheiro pra fazer muito é mais foda ainda.</p>
+        <p>Fizemos um livro que vai te ajudar a administrar sua grana e ficar de boa na lagoa.</p>
+      </article>
+
+      <article class="calculadora-financeira">
+        <h1>Calculadora financeira</h1>
+        <p>Preparamos um simulador pra você saber de cara o balanço entre o 
+que você gasta e ganha.</p>
+        <form action="javascript:void(0)">
+          <input type="number" placeholder="Quanto você recebe em um mês?" name="salario-mes">
+          <input type="number" placeholder="Quanto você gasta no mês?" name="gastos-mes">
+          <input type="number" placeholder="Quanto falta pra você fechar as contas do mês?" name="falta-mes">
+          <input type="submit" name="calcular" value="Ver meu perfil financeiro">
+        </form>
+      </article>
+
+      <article class="guia-financas">
+        <p>Anda mal das finanças? Saiba que você não está sozinho! Pra ajudar
+a galera a gente preparou o...</p>
+        <h1>Guia de Finanças Fodástico!</h1>
+        <p>É só preencher as informações abaixo e a gente te manda o livro.</p>
+        <p>Mas corre que tá de graça até o dia 23/09. #boraserfoda</p>
+        <p class="p-tempo">Tá faltando só</p>
+        <div id="tempo" class="tempo">
+          <div>
+            <span class="tempo-numero dias">5</span>
+            <span class="tempo-texto">dias</span>
+          </div>
+          <div>
+            <span class="tempo-numero horas">22</span>
+            <span class="tempo-texto">horas</span>
+          </div>
+          <div>
+            <span class="tempo-numero minutos">19</span>
+            <span class="tempo-texto">minutos</span>
+          </div>
+          <div>
+            <span class="tempo-numero segundos">42</span>
+            <span class="tempo-texto">segundos</span>
+          </div>
+        </div>
+        <p class="p-tempo">Pra receber o Guia de Finanças Fodástico!</p>
+        <form id="form-cadastro" action="javascript:void(0)" method="post">
+          <input type="text" placeholder="Qual é o seu nome?" name="nome">
+          <input type="email" placeholder="Qual é o seu e-mail preferido?" name="email">
+          <input type="number" class="idade" placeholder="Qual é a sua idade?" name="idade">
+          <select id="sexo" name="sexo" required>
+            <option>Qual é o seu sexo?</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+          </select>
+          <input type="submit" name="cadastro" value="Receber e-book fodástico" onclick="ga('send', 'event', 'formulario','click', 'Cadastro de cliente');">
+        </form>
+      </article>
+
+      <article class="blog-financas">
+        <h1>Blog de Finanças Fodástico</h1>
+        <p class="texto-destaque">10 coisas que todo jovem quebrado deveria fazer</p>
+        <img src="assets/imagens/post_image-crop.png">
+        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+      </article>
+
+    </section>
+
+    <footer>
+      
+    </footer>
+  </body>
+</html>
