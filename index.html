@@ -18,10 +18,10 @@
   <body>
 
     <header>
-      <nav>
-        <a href="#">Ver meu perfil financeiro</a>
-        <a href="#">Receber o livro</a>
-        <a href="#">Ler o Blog Fodástico</a>
+      <nav id="menu">
+        <a href="#form-calc-financeira">Ver meu perfil financeiro</a>
+        <a href="#form-cadastro">Receber o livro</a>
+        <a href="#blog-financas">Ler o Blog Fodástico</a>
       </nav>
     </header>
 
@@ -39,7 +39,7 @@
         <h1>Calculadora financeira</h1>
         <p>Preparamos um simulador pra você saber de cara o balanço entre o 
 que você gasta e ganha.</p>
-        <form action="javascript:void(0)">
+        <form id="form-calc-financeira" action="javascript:void(0)">
           <input type="number" placeholder="Quanto você recebe em um mês?" name="salario-mes">
           <input type="number" placeholder="Quanto você gasta no mês?" name="gastos-mes">
           <input type="number" placeholder="Quanto falta pra você fechar as contas do mês?" name="falta-mes">
@@ -86,7 +86,7 @@ a galera a gente preparou o...</p>
         </form>
       </article>
 
-      <article class="blog-financas">
+      <article class="blog-financas" id="blog-financas">
         <h1>Blog de Finanças Fodástico</h1>
         <p class="texto-destaque">10 coisas que todo jovem quebrado deveria fazer</p>
         <img src="assets/imagens/post_image-crop.png">

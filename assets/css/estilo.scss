@@ -35,13 +35,20 @@ header {
 
     	a {
     		font-family: $font-homizio-bold;
-    		font-size: 24px;
     		color: $cor-branco;
     		text-decoration: none;
 
     		&:nth-child(n+2) {
     			margin-left: 90px;
     		}
+
+    		@media only screen and (min-width: 0) {
+			  font-size: 50px;
+			}
+
+			@media screen and (min-width: 480px) {
+			  font-size: 24px;
+			}
     	}
 
     	a:link {
@@ -73,15 +80,29 @@ section {
 	form {
 		width: 900px;
 		height: 426px;
+		margin-top: 30px;
 		padding-top: 25px;
 		box-sizing: border-box;
 		border-radius: 5px;
 		background-color: $cor-azul;
+		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2), 
+					0 12px 40px 0 rgba(0, 0, 0, 0.19);
+		transition: 1s;
+
+		&:hover {
+			box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 
+						0 12px 40px 0 rgba(0, 0, 0, 0.5);
+			transition: 1s;
+		}
 
 		input {
 			width: 800px;
 			color: $cor-branco;
 			font-size: 36px;
+		}
+
+		input:focus {
+		  outline: none;
 		}
 
 		input[type='text'], input[type='email'], input[type='number'], #sexo {
@@ -100,6 +121,14 @@ section {
 			border-radius: 5px;
 			font-family: $font-homizio-regular;
 			cursor: pointer;
+
+			&:hover {
+				border: 1px solid $cor-azul;
+				background: $cor-azul-escuro;
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($cor-azul-escuro), to(#07384a));
+				background: -webkit-linear-gradient(0% 0%, 0% 100%, from($cor-azul-escuro), to(#07384a));
+				background: -moz-linear-gradient(center top, $cor-azul-escuro, #07384a);
+			}
 		}
 
 		#sexo, .idade {
@@ -188,6 +217,7 @@ section {
 		.texto-destaque {
 			font-family: $font-souses;
 			font-size: 30px;
+			margin-bottom: 40px;
 		}
 
 		img {

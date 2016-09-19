@@ -28,7 +28,17 @@ $(function( scope, $ ) {
 
 		that.init = function() {
 
+			$(document).on('click', '#menu a', that.slowScroll);
+
 			$('#form-cadastro').submit( that.post );
+		}
+
+		that.slowScroll = function() {
+
+		    var idElemento   = $(this).attr("href"),
+		    	deslocamento = $(idElemento).offset().top;
+
+		    $('html, body').animate({ scrollTop: deslocamento }, 1000);
 		}
 
 
